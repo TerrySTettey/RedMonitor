@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "rootBoardId": "board_mu2qr7p2_1763czosjr0pl",
+  "boards": [
+    {
+      "schemaVersion": 2,
+      "id": "board_mu2qr7p2_1763czosjr0pl",
+      "name": "RedMonitor",
+      "kind": "project",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "zoom": 1
+      },
+      "nodes": [
+        {
+          "id": "node_mu2qr7p2_7jj6de14og6bk",
+          "type": "note",
+          "title": "Welcome to RedMonitor",
+          "body": "Project board for `/home/shinoxus/Documents/DevField/RedMonitor`.\n\nDouble-click the canvas to add a note. Drag from a node's edge port to link nodes. Assign tasks to a harness from the inspector.",
+          "x": -160,
+          "y": -220,
+          "width": 320,
+          "height": 220,
+          "collapsed": false,
+          "status": "draft",
+          "tags": [],
+          "createdAt": "2026-09-15T14:02:32.246Z",
+          "updatedAt": "2026-09-15T14:02:32.246Z"
+        }
+      ],
+      "edges": [],
+      "createdAt": "2026-09-15T14:02:32.246Z",
+      "updatedAt": "2026-09-15T14:02:32.246Z",
+      "projectId": "project_mu2ndyfw_5430df81"
+    }
+  ]
+}

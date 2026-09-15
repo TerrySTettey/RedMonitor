@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+.env
+.env.*
+test-results/
+playwright-report/
+# Original hotel feedback and private extraction notes never go to GitHub.
+feedback-inbox/*
+!feedback-inbox/.gitkeep
+.feedback-work/

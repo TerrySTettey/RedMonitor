@@ -1,0 +1,9 @@
+[Unit]
+Description=Remind about hotel feedback and process ready local batches
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/shinoxus/Documents/DevField/RedMonitor
+Environment=PATH=/home/shinoxus/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin
+ExecStart=/usr/bin/bash /home/shinoxus/Documents/DevField/RedMonitor/scripts/process-feedback-local.sh --scheduled
+TimeoutStartSec=4h
