@@ -13,7 +13,7 @@ The website displays the prepared report: reporting-period frequency, positive/m
 
 **Current report:** 180 distinct forms reconstructed from 127 PDF pages across eight scanned batches. Five repeated forms are excluded; entry 1 has no scans. Spreadsheet figures were not imported. Reporting-period labels come from supplied batch metadata, with date discrepancies disclosed.
 
-Sentiment: 92 positive, 78 mixed, 9 negative, 0 neutral and 1 unclear. High-priority findings cover room locks and pest reports. The site is prepared locally; GitHub deployment requires a connected repository.
+Sentiment: 92 positive, 78 mixed, 9 negative, 0 neutral and 1 unclear. High-priority findings cover room locks and pest reports. GitHub Pages is configured at [the public dashboard](https://terrystettey.github.io/RedMonitor/).
 
 ## Privacy
 

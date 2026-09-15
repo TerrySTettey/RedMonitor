@@ -32,6 +32,6 @@ The publisher needs GitHub CLI on PATH, Git configured to use its credentials, a
 ## Remaining setup
 
 - Test the first real batch and confirm desktop notification delivery. The enabled timer sends a local desktop notification, not a ChatGPT message. It needs the computer on and network access for Codex, but not the desktop app. It uses this existing checkout because private inbox files are excluded from Git worktrees.
-- Enable Pages for the repository and verify the first deployment. GitHub rejected Pages on the initial private repository because the current plan does not support private-repository Pages; resolve visibility or hosting before expecting a live update.
+- Pages is enabled using GitHub Actions. With the owner's approval, the repository was made public on September 15, 2026, to use free Pages hosting. The dashboard URL is https://terrystettey.github.io/RedMonitor/.
 
 Never stage scans, private logs or source manifests. The raw inbox is not uploaded to GitHub.
