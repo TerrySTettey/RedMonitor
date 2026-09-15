@@ -16,13 +16,13 @@ Work in this project's existing directory. Read `docs/PROCESSING_FEEDBACK.md` an
 - Preserve the existing public report and private manifests in a timestamped private backup under `.feedback-work/` before modifying them.
 - Prepare a cumulative report with overall and period-specific insights. Keep source scans and provenance private.
 - Follow the publishing and test steps in `docs/PROCESSING_FEEDBACK.md`. Check prose for identifying details and evidence support; schema validation alone is insufficient.
-- Only update dataset expectations in tests when explained by reconciled new forms. Do not weaken validation or redesign the website.
+- Tests use the reviewed initial report as a fixed historical fixture; do not change that fixture or test code when adding forms. Do not weaken validation or redesign the website. The only tracked file this task may change is `public/data/dashboard.json`.
 - If validation, reconciliation or the build fails, restore the report and manifests from this run's backup. Leave affected batches pending and report the failure.
 - After a batch is successfully included in the validated local report, write a `PROCESSED` file in that batch folder recording the completion timestamp and anonymous period ID. A marker means processed locally, not deployed. Do not move or delete scans.
 - An existing `PROCESSED` batch is immutable for this runner. Corrections require an explicit interactive request; do not silently reprocess it.
 
 ## Publishing status
 
-This initial runner updates the local report only. GitHub publishing will be configured once the target repository and authentication are available. Do not commit, push, create repositories or change remote settings from this task yet.
+This AI task updates the local report only. Its enclosing script separately validates, commits only `public/data/dashboard.json`, pushes to `TerrySTettey/RedMonitor` on `main`, and verifies the Pages deployment. Do not run Git write commands or change publishing code from this task.
 
 Finish with new and cumulative form counts, periods processed, main findings, uncertainties, pending batches, validation results and explicit local-only deployment status. Do not claim a website update without a successful deployment.

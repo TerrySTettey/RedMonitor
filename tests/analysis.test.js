@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {validateReport,summarize,filterRecords,frequency} from '../src/analysis.js';
-const source=JSON.parse(readFileSync(new URL('../public/data/dashboard.json',import.meta.url),'utf8'));
+// Preserve the reviewed first batch as a regression fixture as live data grows.
+const source=JSON.parse(readFileSync(new URL('./fixtures/initial-report.json',import.meta.url),'utf8'));
 const report=()=>structuredClone(source);
 test('scan inventory reconciles to distinct forms, excluding missing and duplicate evidence',()=>{
  const d=validateReport(report());

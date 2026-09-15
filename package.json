@@ -10,7 +10,8 @@
     "test": "node --test tests/*.test.js && node scripts/validate-data.js",
     "test:browser": "playwright test",
     "publish:report": "node scripts/publish-report.js",
-    "feedback:process": "bash scripts/process-feedback-local.sh"
+    "feedback:process": "bash scripts/process-feedback-local.sh",
+    "feedback:deploy": "bash scripts/process-feedback-local.sh --publish-only"
   },
   "dependencies": {
     "lucide": "^0.468.0"
